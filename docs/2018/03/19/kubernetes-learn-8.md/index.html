@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="en-us">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>Kubernetesについて学ぶ 8 | yaginumahidetatsu.com</title>
+
+
+<link rel="stylesheet" href="/css/style.css"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+<section class="section">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item" href="https://yaginumahidetatsu.com"><h1 class="title is-4">yaginumahidetatsu.com</h1></a>
+      </div>
+      <div class="nav-right">
+        <a class="level nav-item" href="/post">archives</a><h5 class="level nav-item">/</h5><a class="level nav-item" href="/about">about</a>
+        <nav class="nav-item level is-mobile"></nav>
+      </div>
+    </nav>
+
+    <nav class="nav">
+      
+
+      
+    </nav>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="subtitle is-6 is-pulled-right">
+      
+      
+<a class="subtitle is-6" href="/tags/kubernetes">#kubernetes</a>
+
+
+
+      
+    </div>
+    <h2 class="subtitle is-6">March 19, 2018</h2>
+    <h1 class="title">Kubernetesについて学ぶ 8</h1>
+    
+    <div class="content">
+      <p>引き続き。ちょっと空いてしまった。</p>
+
+<p></p>
+
+<h1 id="using-a-service-to-expose-your-app">Using a Service to Expose Your App</h1>
+
+<pre><code>Kubernetesポッドは死にます。
+ポッドには実際にライフサイクルがあります。
+ワーカーノードが消滅すると、Node上で動作するPodも失われます。
+ReplicationControllerは、新しいPodを作成してアプリケーションを実行し続けることによって、
+クラスタを動的に所望の状態に戻すことができます。
+もう1つの例として、3つのレプリカを持つ画像処理バックエンドを考えてみましょう。
+それらのレプリカは代替可能です。フロントエンドシステムはバックエンドレプリカを気にしてはいけません。
+また、Podが失われて再作成されたとしても。つまり、Kubernetesクラスター内の各ポッドには、
+同じノード上のポッドであっても固有のIPアドレスがあるため、アプリケーションが機能し続けるように、ポッド間の変更を自動的に調整する方法が必要です。
+
+Kubernetesのサービスは、論理的なPodセットと、そのPodにアクセスするためのポリシーを定義する抽象です。
+サービスによって、依存するポッド間の疎結合が可能になります。
+サービスは、すべてのKubernetesオブジェクトと同様に、YAML（推奨）またはJSONを使用して定義されます。
+サービスによってターゲットとされるポッドのセットは、
+通常、LabelSelectorによって決定されます（なぜ、selecterをスペックに含めることなくサービスを望むべきかは以下を参照）。
+
+各Podには一意のIPアドレスがありますが、
+これらのIPはサービスなしでクラスタ外に公開されません。
+サービスにより、アプリケーションはトラフィックを受信できます。
+サービスは、ServiceSpecで型を指定することによって、さまざまな方法で公開できます。
+
+* ClusterIP（デフォルト） - クラスタ内の内部IPにサービスを公開します。このタイプでは、サービスはクラスタ内からのみ到達可能になります。
+* NodePort  -  NATを使用して、クラスタ内の選択された各ノードの同じポートにサービスを公開します。 &lt;NodeIP&gt;：&lt;NodePort&gt;を使用して、クラスタの外部からサービスにアクセスできるようにします。 ClusterIPのスーパーセット。
+* LoadBalancer  - 現在のクラウドに外部ロードバランサを作成し（サポートされている場合）、固定された外部IPをサービスに割り当てます。 NodePortのスーパーセット。
+* ExternalName  - 名前付きのCNAMEレコードを返すことで、任意の名前（仕様ではexternalNameで指定）を使用してサービスを公開します。プロキシは使用されません。このタイプにはv1.7以上のkube-dnが必要です。
+
+さまざまなタイプのサービスの詳細については、「ソースIPの使用」チュートリアルを参照してください。 「アプリケーションをサービスと接続する」も参照してください。
+
+さらに、仕様にセレクタを定義しないサービスに関するユースケースがいくつかあることに注意してください。
+セレクタなしで作成されたサービスは、対応するエンドポイントオブジェクトも作成しません。
+これにより、ユーザーはサービスを特定のエンドポイントに手動でマップできます。
+セレクタが存在しない別の可能性は、厳密にtype：ExternalNameを使用していることです。
+</code></pre>
+
+<p>サービスという概念が出てきた。Windowsっぽい。</p>
+
+<pre><code>サービスは、一連のポッドにトラフィックをルーティングします。
+サービスは、アプリケーションに影響を与えることなく、ポッドを死にさせ、Kubernetesで複製する抽象化です。
+依存するポッド（アプリケーション内のフロントエンドおよびバックエンドコンポーネントなど）間の検出とルーティングは、Kubernetes Servicesによって処理されます。
+
+サービスは、Kubernetesのオブジェクトに対する論理操作を可能にするグループ化プリミティブであるラベルとセレクタを使用して、一連のPodと一致します。
+ラベルは、オブジェクトに関連付けられたキー/値のペアであり、任意の数の方法で使用できます。
+
+* 開発、テスト、生産のためのオブジェクトの指定
+* バージョンタグを埋め込む
+* タグを使用してオブジェクトを分類する
+</code></pre>
+
+<p>いよいよ複雑になってきた。
+たぶん、サービスはエンドポイント的な役割を果たしている。外部との接点みたいな。</p>
+      
+    </div>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container has-text-centered">
+    <p>(c) <a href="https://github.com/ygnmhdtt">Hidetatsu Yaginuma</a> 2018</p>
+    
+  </div>
+</section>
+
+</body>
+</html>
+

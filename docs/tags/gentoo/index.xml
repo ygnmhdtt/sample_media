@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gentoo on yaginumahidetatsu.com</title>
+    <link>https://yaginumahidetatsu.com/tags/gentoo/</link>
+    <description>Recent content in Gentoo on yaginumahidetatsu.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) &lt;a href=&#34;https://github.com/ygnmhdtt&#34;&gt;Hidetatsu Yaginuma&lt;/a&gt; 2018</copyright>
+    <lastBuildDate>Tue, 27 Feb 2018 22:05:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://yaginumahidetatsu.com/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GentooのターミナルにRictyを導入した</title>
+      <link>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</link>
+      <pubDate>Tue, 27 Feb 2018 22:05:46 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/27/gentoo-ricty/</guid>
+      <description>&lt;p&gt;Rictyのいれ方。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GentooをSystemdに移行した</title>
+      <link>https://yaginumahidetatsu.com/2018/02/26/gentoo-systemd/</link>
+      <pubDate>Mon, 26 Feb 2018 20:11:32 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/26/gentoo-systemd/</guid>
+      <description>&lt;p&gt;OpenRCからSystemdに移行した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>equeryのオプション</title>
+      <link>https://yaginumahidetatsu.com/2018/02/25/equery-options/</link>
+      <pubDate>Sun, 25 Feb 2018 11:12:20 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/25/equery-options/</guid>
+      <description>&lt;p&gt;equeryでよく使うコマンドオプションをメモっておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Portageのオプション</title>
+      <link>https://yaginumahidetatsu.com/2018/02/25/portage-options/</link>
+      <pubDate>Sun, 25 Feb 2018 05:01:33 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/02/25/portage-options/</guid>
+      <description>&lt;p&gt;portage操作によく使うオプションたち。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GentooのWifiがブツブツ切れる問題に対応した</title>
+      <link>https://yaginumahidetatsu.com/2018/01/14/gentoo-wifi-problem/</link>
+      <pubDate>Sun, 14 Jan 2018 22:46:49 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/14/gentoo-wifi-problem/</guid>
+      <description>&lt;p&gt;メモっておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gentoo上のfluxboxでSkypeを使用した感想</title>
+      <link>https://yaginumahidetatsu.com/2018/01/05/gentoo-skype-2/</link>
+      <pubDate>Fri, 05 Jan 2018 13:30:22 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/05/gentoo-skype-2/</guid>
+      <description>&lt;p&gt;仕事が始まったので、Skypeを使ってみた。なんの問題もなく使えている。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GentooにSkypeをインストールした</title>
+      <link>https://yaginumahidetatsu.com/2018/01/02/gentoo-skype/</link>
+      <pubDate>Tue, 02 Jan 2018 19:27:43 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2018/01/02/gentoo-skype/</guid>
+      <description>&lt;p&gt;まだ試していないがSkypeをインストールした。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GentooにDockerを入れた</title>
+      <link>https://yaginumahidetatsu.com/2017/12/31/gentoo-docker/</link>
+      <pubDate>Sun, 31 Dec 2017 08:48:51 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/31/gentoo-docker/</guid>
+      <description>&lt;p&gt;表題の手順をメモる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GentooにFluxboxを入れたのでメモ</title>
+      <link>https://yaginumahidetatsu.com/2017/12/30/gentoo-fluxbox/</link>
+      <pubDate>Sat, 30 Dec 2017 11:19:33 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/30/gentoo-fluxbox/</guid>
+      <description>&lt;p&gt;メモる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThinkPad上のLinuxで音を出すためにやったこと</title>
+      <link>https://yaginumahidetatsu.com/2017/12/30/gentoo-sound/</link>
+      <pubDate>Sat, 30 Dec 2017 11:04:42 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/30/gentoo-sound/</guid>
+      <description>&lt;p&gt;Xとfluxboxを入れたは良いものの、音が出なかったので、対応した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>カーネル構築時のオプションについて</title>
+      <link>https://yaginumahidetatsu.com/2017/12/29/about-kernel-make-config/</link>
+      <pubDate>Fri, 29 Dec 2017 10:40:43 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/29/about-kernel-make-config/</guid>
+      <description>&lt;p&gt;&lt;code&gt;make *config&lt;/code&gt; について学んだ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>grubでGentooとWindowsを起動できるようにする</title>
+      <link>https://yaginumahidetatsu.com/2017/12/28/grub-windows/</link>
+      <pubDate>Thu, 28 Dec 2017 22:36:16 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/28/grub-windows/</guid>
+      <description>&lt;p&gt;grubを使ってLinuxとWindowsを選択できるようにする方法のメモ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gentooのネットワーク周りのセットアップについて</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup-network/</link>
+      <pubDate>Tue, 26 Dec 2017 12:29:07 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup-network/</guid>
+      <description>&lt;p&gt;ネットワーク周りでハマったのでメモ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gentooの初期設定</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup/</link>
+      <pubDate>Tue, 26 Dec 2017 12:05:03 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-setup/</guid>
+      <description>&lt;p&gt;Gentooの初期設定をメモる。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThinkPadE470にGentooをインストールした その2</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-2/</link>
+      <pubDate>Tue, 26 Dec 2017 11:39:37 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-2/</guid>
+      <description>&lt;p&gt;その1は&lt;a href=&#34;https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ThinkPadE470にGentooをインストールした その1</title>
+      <link>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/</link>
+      <pubDate>Tue, 26 Dec 2017 10:49:31 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/26/gentoo-install-1/</guid>
+      <description>&lt;p&gt;ThinkPad E470にGentooをインストールしたログ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>wpa_supplicantでWPAの無線LANに繋ぐ</title>
+      <link>https://yaginumahidetatsu.com/2017/12/24/wpa_supplicant/</link>
+      <pubDate>Sun, 24 Dec 2017 19:15:39 +0900</pubDate>
+      
+      <guid>https://yaginumahidetatsu.com/2017/12/24/wpa_supplicant/</guid>
+      <description>&lt;p&gt;表題についてメモっておく。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
