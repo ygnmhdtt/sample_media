@@ -5,7 +5,6 @@
         <a class="nav-item" href="{{ .Site.BaseURL }}"><h1 class="title is-4">{{ .Site.Title }}</h1></a>
       </div>
       <div class="nav-right">
-        <a class="level nav-item" href="/post">archives</a><h5 class="level nav-item">/</h5><a class="level nav-item" href="/about">about</a>
         <nav class="nav-item level is-mobile">
           {{- range $platform, $username := .Site.Params.social -}}
           {{- if $username -}}

@@ -69,6 +69,10 @@ facebook = "ribice"
 instagram = ""
 codepen = ""
 
+[params.matomoAnalytics]
+siteID = 1
+rootURL = "//matomo.example.com/"
+
 [taxonomies]
 tag ="tags"
 
@@ -113,9 +117,20 @@ There are two positions:
 "http://example.com/special-page" = "Example"
 ```
 
-## Favicons
+## Favicons, Browserconfig, Manifest
 
-Put your own favicons into `/static` and customize `browserconfig.xml` and `site.webmanifest` to fit your needs.
+It is recommended to put your own favicons
+
+* `apple-touch-icon.png` (180x180)
+* `favicon-32x32.png` (32x32)
+* `favicon-16x16.png` (16x16)
+* `mstile-150x150.png` (150x150)
+* `android-chrome-192x192.png` (192x192)
+* `android-chrome-512x512.png` (512x512)
+
+into `/static`. They're easily created via https://realfavicongenerator.net/.
+
+Customize `browserconfig.xml` and `site.webmanifest` to set `theme-color` and `background-color` for example.
 
 ## Related Articles
 
@@ -131,6 +146,7 @@ tags: ["Android", "Apple", "iPhone"] # Adds tags to the post
 cover: https://example.com/img/1/image.jpg # Cover used for OpenGraph and Twitter Cards
 adsenseTop: true # If adsense property is set (params.info.adsense) include an ad above content
 adsenseBottom: true # If adsense property is set (params.info.adsense) include an ad below content
+hidden: true # If true, page will not be shown in the list view
 ```
 
 ## Build
