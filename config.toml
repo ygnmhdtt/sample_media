@@ -1,10 +1,10 @@
-baseURL = "http://test.github.io"
+baseURL = "https://ygnmhdtt.github.io/sample_media/"
 languageCode = "en-us"
-title = "ygnmhdtt_test"
+title = "title"
 theme = "kiss"
 copyright = "(c) ygnmhdtt"
 disqusShortname = "shortname"
-Paginate = 4
+Paginate = 5
 enableRobotsTXT = true
 publishDir = "docs"
 
