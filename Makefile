@@ -1,6 +1,6 @@
 default:
 	@echo "=== Deployment Start"
-	hugo
+	hugo --ignoreCache
 	@echo ""
 	git add .
 	git commit -m 'update'
